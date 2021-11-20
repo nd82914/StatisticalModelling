@@ -18,6 +18,7 @@ warnings.filterwarnings('ignore')
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import pymc3
 pd.set_option('display.max_columns', None)
 #%%
 data_file = "./chap9.csv"
@@ -39,7 +40,7 @@ import statsmodels.formula.api as smf
 # cf. https://github.com/statsmodels/statsmodels/issues/3931
 from scipy import stats
 stats.chisqprob = lambda chisq, df: stats.chi2.sf(chisq, df)
-
+data=df_inp[["x","y"]]
 result = smf.poisson('y ~ x', data=data).fit()
 result.summary()
 
@@ -62,9 +63,6 @@ plt.show()
 # %% [markdown]
 # ## 9.4 ベイズ統計モデルの事後分布の推定
 
-# %%
-# pip install pymc3
-import pymc3
 
 
 # %%
@@ -160,6 +158,4 @@ pymc3.summary(trace)
 
 
 # %%
-
-
 
