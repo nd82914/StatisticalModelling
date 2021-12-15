@@ -18,3 +18,4 @@ $$\prod_{a}^{b}$$
 $$p(A,B)=p(A|B)p(B)=p(B|A)p(A)$$
 $$p(A|B)=\frac{p(B|A)p(A)}{p(B)}$$
 $$p(A|B)=\frac{p(B|A)p(A)}{\sum_{A}{p(B|A)p(A)}}$$
+aa

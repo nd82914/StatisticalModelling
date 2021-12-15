@@ -5,7 +5,6 @@
 # 著者サイトで公開されているデータを使います。
 # 
 # http://hosho.ees.hokudai.ac.jp/~kubo/ce/IwanamiBook.html
-
 # %%
 import zipfile
 import math
